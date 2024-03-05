@@ -33,7 +33,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 #reading csv file
-data=pd.read_csv(r"C:\Users\User\OneDrive\Desktop\WineQT.csv")
+data=pd.read_csv('WineQT.csv')
 X =np.array(data[['fixed acidity', 'volatile acidity' , 'citric acid' , 'chlorides' , 'total sulfur dioxide' , 'alcohol' , 'sulphates']])
 Y = np.array(data['quality'])
 #random forest model
