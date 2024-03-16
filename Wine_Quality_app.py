@@ -48,7 +48,7 @@ prediction_proba = rfc.predict_proba(df)
 st.subheader('Prediction')
 st.write(prediction)
 st.subheader('Result')
-if prediction>= 7:
+if prediction>= 6:
   st.write('Good Wine')
 else:
   st.write('Bad Wine')
